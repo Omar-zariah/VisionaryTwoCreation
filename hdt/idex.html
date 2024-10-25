@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises - HTML Tables and Form</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Exercise 1: Calculation Table -->
+    <h2>Calcul de la Moyenne</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Matières</th>
+                <th>Note par matière</th>
+                <th>Coefficient</th>
+                <th>Note × Coefficient</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathématiques</td>
+                <td>17</td>
+                <td>3</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <td>Physique</td>
+                <td>15</td>
+                <td>4</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Informatique</td>
+                <td>16</td>
+                <td>5</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td><strong>Totaux</strong></td>
+                <td colspan="3">191</td>
+            </tr>
+            <tr>
+                <td><strong>Moyenne</strong></td>
+                <td colspan="3">16.12</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Exercise 2: Registration Form -->
+    <h2>Formulaire d'inscription</h2>
+    <form>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="sexe">Sexe:</label>
+        <input type="radio" id="masculin" name="sexe" value="masculin" required>
+        <label for="masculin">Masculin</label>
+        <input type="radio" id="feminin" name="sexe" value="feminin" required>
+        <label for="feminin">Féminin</label>
+
+        <br><br>
+        <input type="submit" value="S'inscrire">
+    </form>
+</body>
+</html>
